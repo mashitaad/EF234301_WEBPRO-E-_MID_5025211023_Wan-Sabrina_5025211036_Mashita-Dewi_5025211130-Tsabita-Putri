@@ -121,6 +121,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'Mashita Dewi', 'boonoft@gmail.com', NULL, '$2y$10$DXlYjMTa3r0jENsYz7jmL.iHc1QpTMLr0C65y2S8/qP7RGP7wU/hq', NULL, '2023-10-11 17:24:03', '2023-10-11 17:24:03'),
 (2, 'Wan Sabrina Mayzura', 'wansabrina.ws@gmail.com', NULL, '$2y$10$tsXas3tKELk7sTjtDc5A5.KijJVYZPQmdIFGUpl8SH6xWEN7LnZG.', NULL, '2023-10-14 12:09:18', '2023-10-14 12:09:18');
+(3, 'Tsabita Putri Ramadhany', 'bitharamadhany@gmail.com', NULL, '$2y$10$6/BwQ8bNRZUOGXsk7xiFw.4w1hUCEVi5DliqzTEOB5Gu9Uh91q2cO', 'gbhLyBeOcd8ObolaIg9lQ9tcPNkdL19Ck82GhOANNTEcn6twEMgI1cXDxCGT', '2023-10-25 18:40:30', '2023-10-25 18:40:30');
 
 ALTER TABLE `communities`
   ADD PRIMARY KEY (`community_id`);
