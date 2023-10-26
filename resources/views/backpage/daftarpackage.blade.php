@@ -67,14 +67,14 @@
                 </tbody>
             </table>
         </div>
-            <?php if (Request::path()=='package') {?>
-                <div class="m-4">
-                    Showing {{ $packages->firstItem() }} to {{ $packages->lastItem() }} of {{ $packages->total() }} results
-                </div>
-                <div class="m-4"> 
-                    {{$packages->appends(request()->query())->links()}}
-                </div>
-            <?php } ?>
+        @if (\Illuminate\Support\Facades\Request::path() == 'package')
+        <div class="m-4">
+            Showing {{ $packages->firstItem() }} to {{ $packages->lastItem() }} of {{ $packages->total() }} results
+        </div>
+        <div class="m-4"> 
+            {{$packages->appends(request()->query())->links()}}
+        </div>
+    @endif
     </div>
 </div>
 
